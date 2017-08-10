@@ -1,1 +1,2 @@
-# tornado-oauth
+# Tornado Oauth
+Authentication using GitHub.

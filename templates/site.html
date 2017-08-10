@@ -1,0 +1,15 @@
+{# This is a comment #}
+
+{# The next tag is a variable output: #}
+{{title}}
+
+{# Tag for a block, can be replaced through inheritance with other html code #}
+{% block head %}
+<h1>This is the head!</h1>
+<h2>Isn't this GRAND!</h2>
+{% endblock %}
+
+{# Output of an array as an iteration #}
+{% for item in list %}
+<li>{{ item }}</li>
+{% endfor %}
