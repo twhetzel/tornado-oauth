@@ -61,7 +61,9 @@ function checkInput() {
     <h3 class="header center blue-text">API Metadata Registration Form</h3>
     <div class="row center">
       <br><br>
-      <form action="#" method="post" name="formInput">
+
+      <form action="/testtemplate" method="post?xsrf={{ xsrf }} " name="formInput">
+
         <div class="row">
             <div class="input-field col s6 offset-s3">
                 <input placeholder="API Metadata URL" name="url_input" type="text" class="validate">
@@ -72,18 +74,18 @@ function checkInput() {
         <div>
           <div class="row">
             <div class="col s3 offset-s3">
-              <button class="btn waves-effect waves-light blue accent-2" id="submit" type="submit" name="action" onclick="return checkInput()">Cancel</button>
+
+              <a href="/logout" button class="btn waves-effect waves-light red accent-2" type="submit">Cancel
+              </a>
+
             </div>
             <div class="col s3">
-              <button class="btn waves-effect waves-light red accent-2" id="submit" type="submit" name="action" onclick="return checkInput()">Submit</button>
+              <button class="btn waves-effect waves-light blue accent-2" id="submit" type="submit" name="action" onclick="return checkInput()">Submit</button>
              </div>
            </div>
          </div>
-
         </form>
     </div>
   </div>
 </div>
-
-
 {% endblock %}
