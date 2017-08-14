@@ -61,16 +61,7 @@ function checkInput() {
     <h3 class="header center blue-text">Login</h3>
     <div class="row center">
       <br><br>
-      <form action={{ path }} method="post?xsrf={{ xsrf }}" name="formInput">
-
-        <div class="row">
-            <div class="input-field col s6 offset-s3">
-                <input placeholder="API Metadata URL" name="url_input" type="text" class="validate">
-                <label for="url_input">this is the login page</label>
-            </div>
-        </div>
-        <button class="btn waves-effect waves-light red accent-2" id="submit" type="submit" name="action" >Login with GitHub</button>
-        </form>
+      <a href={{ path }} button class="btn waves-effect waves-light red accent-2" type="submit">Login with Github</a>
     </div>
   </div>
 </div>
